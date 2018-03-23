@@ -6,7 +6,7 @@ $("#botoncrearpasajero")
 	var Json = {"NombrePasajero":nombre, "IdPasajero":id};
 	console.log("Prueba de recoleccion datos",nombre, id);
 				//"Parametro en Api":var, "Parametro en Api":var, etc...
-	
+
 	$.ajax({
 		data:Json,
 		url:'localhost/API/GestionarPasajero/crearpasajero',
@@ -32,7 +32,7 @@ $("#botonasignarpasajero")
 	var Json = {"IdPasajero":idpasajero, "IdAeronave":idaeronave};
 	console.log("definicion de elementos",idpasajero, idaeronave);
 				//"Parametro en Api":var, "Parametro en Api":var, etc...
-	
+
 	$.ajax({
 		data:Json,
 		url:'localhost/API/GestionarPasajero/asignarpasajero',
@@ -59,7 +59,7 @@ $("#botonbajarpasajero")
 	var Json = {"IdPasajero":idpasajero, "IdAeronave":idaeronave};
 	console.log("Identificación de sujetos bajados",idpasajero, idaeronave);
 				//"Parametro en Api":var, "Parametro en Api":var, etc...
-	
+
 	$.ajax({
 		data:Json,
 		url:'localhost/API/GestionarPasajero/crearpasajero',
@@ -75,9 +75,3 @@ $("#botonbajarpasajero")
 }
 
 	);
-
-
-
-
-
-
