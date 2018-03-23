@@ -42,3 +42,12 @@ div.divcrear
 	padding: 10px;
 	border: 2px solid black;
 }
+
+div.listarnodrizas
+{
+	width: 390px;
+	height: 115px;
+	background-color: silver;
+	padding: 10px;
+	border: 2px solid black;
+}

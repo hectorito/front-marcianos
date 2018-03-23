@@ -47,15 +47,9 @@
 					Submit o enviar
 				</button>
 			<br />
-			<br />
 			<div>
-				<p>Dudas o apuntes:</p>
-				<p>Cada pasajero contiene un DESTINO</p>
-				<p>La aeronave debe conocer o consultar el Destino del pasajero</p>
-			</div>
-
-			<div>
-				<h1>Regresar a inicio sin asignar <a href="index.html">Cancelar</a></h1>
+				<h1>Regresar a inicio sin asignar <a href="index.html">Cancelar</a>
+				</h1>
 			</div>
 		</div>
 			
@@ -63,21 +57,25 @@
 
 		<div class="bajarpasajero">
 			<p class="crear">Bajar Pasajero</p>
-			<br />
-			<input type="number" id="idpasajerobajar" >Identificador Pasajero </code>
-				<br />
+			<input type="number" id="idpasajerobajar"> Identificador Pasajero </code>
 				<br />
 				<input type="number" id="idaeronavebajar">Identificador Aeronave</code>
-			
-			<br />
-			
+				<br/><br/>
 			<button type="submit" id="botonbajarpasajero">Bajar Pasajero Aeronave</button>
 
-			<br />
-			<div>
-				<h1>Regresar a inicio sin bajar<a href="index.html">Cancelar</a></h1>
-			</div>
-
+		</div>
+		<br/>
+		<div class="listarpasajerosaeronave1">
+			<h2>Listar Pasajeros de Aeronave</h2>
+			<input type="number" id="idaeronavelistarpasajero">
+			Identificador de aeronave 
+			<code/>
+			<button type="submit" id="bottonlistarpasajerosaeronave">
+				Listar Asignados
+			</button>
+		</div>
+		<div>
+			<h1>Regresar a inicio sin bajar<a href="index.html">Cancelar</a></h1>
 		</div>	
 	</body>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>

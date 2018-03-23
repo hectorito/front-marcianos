@@ -1,7 +1,7 @@
-div.intento2
+div.listarpasajerosaeronave1
 {
-		width: 420px;
-		height: 230px;
+		width: 390px;
+		height: 160px;
 		background-color: grey;
 		padding: 10px;
 		color: white;
@@ -32,7 +32,7 @@ div.sqltest
 div.divextragrande
 	{
 		width: 420px;
-		height: 1250px;
+		height: 1450px;
 		background-color: yellow;
 		padding: 10px;
 
@@ -65,7 +65,7 @@ a.acciones
 div.asignarpasajero
 {
 		width: 390px;
-		height: 500px;
+		height: 310px;
 		background-color: white;
 		float: auto;
 		position: top;
@@ -78,7 +78,7 @@ div.asignarpasajero
 div.bajarpasajero
 {
 		width: 390px;
-		height: 350px;
+		height: 210px;
 		background-color: lime;
 		float: auto;
 		position: top;
