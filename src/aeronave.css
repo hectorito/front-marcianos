@@ -1,0 +1,39 @@
+div.espaciador
+{
+	height: 40px;
+}
+
+a.cargaraeronaves
+{
+		width: 390px;
+		height: 50px;
+		background-color: green;
+		float: auto;
+		position: top;
+		position: left;
+		font-size: 40px;
+		text-align: center;
+		color: blue;
+}
+
+div.divaero
+{
+	width: 390px;
+		height: 80px;
+		background-color: lime;
+		float: auto;
+		position: top;
+		position: left;
+		font-size: 40px;
+		text-align: center;
+		color: blue;
+}	
+
+div.divgrandeaero
+	{
+		width: 400px;
+		height: 550px;
+		background-color: yellow;
+		padding: 10px;
+
+	}

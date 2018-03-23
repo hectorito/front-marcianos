@@ -1,0 +1,44 @@
+div.divgrandenodriza
+	{
+		width: 420px;
+		height: 450px;
+		background-color: yellow;
+		padding: 10px;
+
+	}
+
+div.divmedio
+{
+		width: 390px;
+		height: 50px;
+		background-color: purple;
+		float: auto;
+		position: top;
+		position: left;
+		font-size: 40px;
+		text-align: center;
+		color: red;
+}
+
+div.divaccion
+{
+		width: 390px;
+		height: 50px;
+		background-color: lime;
+		float: auto;
+		position: top;
+		position: left;
+		font-size: 30px;
+		text-align: center;
+		color: red;
+}
+
+
+div.divcrear
+{
+	width: 390px;
+	height: 165px;
+	background-color: silver;
+	padding: 10px;
+	border: 2px solid black;
+}

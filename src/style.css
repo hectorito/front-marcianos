@@ -1,0 +1,70 @@
+div.divgrande
+	{
+		width: 400px;
+		height: 400px;
+		background-color: yellow;
+		padding: 10px;
+
+	}
+
+div.div190x100i
+	{
+		width: 290px;
+		height: 100px;
+		background-color: green;
+		float: auto;
+		position: top;
+		position: left;
+		font-size: 40px;
+		text-align: center;
+		color: red;		
+	}
+
+div.div190x100d
+	{
+		width: 190px;
+		height: 100px;
+		background-color: grey;
+		float: right;
+		position: top;
+		position: right;
+		font-size: 40px;
+		text-align: center;		
+	}
+
+
+div.div190x100ib
+	{
+		width: 190px;
+		height: 100px;
+		background-color: red;
+		position: top;
+		position: left;	
+		font-size: 40px;
+		text-align: center;
+		color: white;	
+	}	
+
+
+
+div.div190x100db
+	{
+		width: 300px;
+		height: 100px;
+		background-color: lime;
+		float: right;
+		position: top;
+		position: right;
+		font-size: 40px;
+		text-align: center;	
+		color: black;	
+	}
+
+div.div390x390ib
+	{
+		width: 100px;
+		height: 100px;
+		background-color: maroon;
+		position: bottom;
+		position: left;		
+	}		

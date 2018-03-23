@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="aeronave.css">
+		<link rel="stylesheet" href="nodriza.css">
+		<link rel="stylesheet" href="gestionarpasajero.css">
+		<title>Gestionar Pasajero</title>
+		
+		
+	</head>
+	<body>
+		<div class="divextragrande">
+
+			<div class="divcrear">
+				<p class="crear">Crear Pasajero
+				</p>
+				<br />
+				
+					<input type="text" id="nombrepasajero">Nombre Pasajero </code>
+					<br />
+					<br />
+					<input type="number" id="idpasajero">Identificador Pasajero</code>
+					<br />
+				<button id="botoncrearpasajero" type="submit">
+					Submit o enviar
+				</button>
+				<br />
+				<div>
+					<h1>Salir Sin Crear
+						<a href="index.html">Cancelar</a>
+					</h1>
+				</div>
+		</div>
+		<br/>
+
+		<div class="asignarpasajero">
+			<p class="crear">Asignación de Pasajeros</p>
+			
+				<input type="number" id="idpasajeroasignar">Identificador de Pasajero </code>
+				<br />			
+				<br />
+				<input type="number" id="idaeronaveasignar">Identificador Aeronave</code>
+		
+			<br/>
+			<button id="botonasignarpasajero" type="submit">
+					Submit o enviar
+				</button>
+			<br />
+			<br />
+			<div>
+				<p>Dudas o apuntes:</p>
+				<p>Cada pasajero contiene un DESTINO</p>
+				<p>La aeronave debe conocer o consultar el Destino del pasajero</p>
+			</div>
+
+			<div>
+				<h1>Regresar a inicio sin asignar <a href="index.html">Cancelar</a></h1>
+			</div>
+		</div>
+			
+		<br />
+
+		<div class="bajarpasajero">
+			<p class="crear">Bajar Pasajero</p>
+			<br />
+			<input type="number" id="idpasajerobajar" >Identificador Pasajero </code>
+				<br />
+				<br />
+				<input type="number" id="idaeronavebajar">Identificador Aeronave</code>
+			
+			<br />
+			
+			<button type="submit" id="botonbajarpasajero">Bajar Pasajero Aeronave</button>
+
+			<br />
+			<div>
+				<h1>Regresar a inicio sin bajar<a href="index.html">Cancelar</a></h1>
+			</div>
+
+		</div>	
+	</body>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="gestionarpasajero.js" type="text/javascript"></script>
+	
+</html>
