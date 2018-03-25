@@ -37,13 +37,16 @@ $("#listarpasajeros")
 			window.alert("Se gestiona el Envio, momento");
 		},
 		success:function(response){
-			var json = $.parseJSON(response);
+			dataType: 'json';
+			var Json = $.parseJSON(response);
 
-			for (var i = 0; json.length > i; ++i) {
-				$('#listarpasajeros').append('<div class="listarpasajeros">'+json[i].ID+' json[i].Nombre</>');
+			for (var i = 0; Json.length > i; ++i) {
+				$('div#listarpasajeros').append('<div id="newdiv1">'+Json[i].id+' " " '+Json[i].name' +" " "</>');
+				
+				<br/>
 			}
 
-			console.log(response);
+			//console.log(response);
 		},
 		error:function(){alert("no sucedio... error");}
 	});
