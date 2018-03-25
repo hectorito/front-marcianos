@@ -50,7 +50,7 @@ $("#botonasignarpasajero")
 	);
 
 
-// TODO: Arreglar bajar pasajero, no realiza llamada API
+// TODO: Arreglar bajar pasajero, no realiza llamada API (Tal vez boton no funciona)
 $("#botonbajarpasajero")
 .click(function(e)
 {
