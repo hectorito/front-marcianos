@@ -21,3 +21,39 @@ $("#botoncrearrevision")
 }
 
 	);
+
+//hay que crear listar revisiones boton***********
+
+$("#listarpasajeros")
+.click(function(e)
+{
+	//debe mandar el id del revisor y obtener:
+	// lista de pasajeros y nombre del revisor
+	$.ajax({
+		//data:Json,
+		url:'http://localhost:4242/generatereview/?id=idrevision&&name=nombrerevisor&&aircraft_id=idaeronave',
+		type:'get',
+		beforeSend:function(){
+			window.alert("Se gestiona el Envio, momento");
+		},
+		success:function(response){
+			var json = $.parseJSON(response);
+
+			for (var i = 0; json.length > i; ++i) {
+				$('#listarpasajeros').append('<div class="listarpasajeros">'+json[i].ID+' json[i].Nombre</>');
+			}
+
+			console.log(response);
+		},
+		error:function(){alert("no sucedio... error");}
+	});
+}
+
+	);
+
+
+
+
+
+
+

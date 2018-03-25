@@ -1,3 +1,15 @@
+
+button.bterminarrevision
+{
+	font-size: 35px;
+
+}
+
+button.blistarpasajeros
+{
+	font-size: 33px
+}
+
 div.divrevision
 {		width: 400px;
 		height: 500px;
@@ -6,3 +18,22 @@ div.divrevision
 
 }
 
+div.divlistapasajeros
+	{
+		width: 380px;
+		background-color: white;
+		padding: 10px;
+	}
+
+div.dtitulorevision
+	{
+		width: 390px;
+		height: 50px;
+		background-color: purple;
+		float: auto;
+		position: top;
+		position: left;
+		font-size: 20px;
+		text-align: center;
+		color: red;
+	}
