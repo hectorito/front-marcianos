@@ -1,5 +1,3 @@
-
-// TODO: no realiza llamada API (tal vez boton no funciona)
 $("#botoncrearaeronave")
 .click(function(e)
 {
@@ -10,10 +8,10 @@ $("#botoncrearaeronave")
 	var idnodrizadestino=document.getElementById('idnodrizadestino').value;
 	console.log("Prueba de recoleccion datos",nombre, idaeronave);
 	//"Parametro en Api":var, "Parametro en Api":var, etc...
-
+	var url = "http://localhost:4242/newaircraft/?id="+idaeronave+"&&name="+nombre+"&&maxcap="+capacidad+"&&origin_id="+idnodrizaorigen+"&&destination_id="+idnodrizadestino;
 	$.ajax({
-		url: "http://localhost:4242/newaircraft/?id="+idaeronave+"&&name="+nombre+"&&maxcap="+capacidad+"&&origin_id="+idnodrizaorigen+"&&destination_id="idnodrizadestino,
-		type:'get',
+		url: url,
+		type:'GET',
 		beforeSend:function(){
 			window.alert("Se gestiona el Envio, momento");
 		},

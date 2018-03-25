@@ -3,39 +3,37 @@
 <head>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="aeronave.css">
-	<link rel="stylesheet" href="nodriza.css">
-	<title>crear nodriza</title>
+	<title>crear Aeronave</title>
 </head>
 <body>
 	<div class="divgrandeaero">
 		<div class="divmedio">
-			<p>Crear Aeronave
-			</p></div>
-			<br />
-			<br />
-				
-				<input type="name" id="nombrenave">Nombre Aeronave </code>
-				<br />
-				<input type="number" id="idaeronave">Identificador Aeronave</code>
-				<br/>
-				<input type="number" id="capacidad">Capacidad Aeronave</code>
-				<br />
-				<input type="name" id="idnodrizaorigen">Identificador Nodriza Origen</code>
-				<br/>
-				<input type="name" id="idnodrizadestino">Identificador Nodriza Destino</code>
-				
-				<button type="submit" id="botoncrearaeronave">Crear Aeronave (version espacial)</button>
+			<p>Crear Aeronave</p>
 
-	<div class="espaciador"></div>
+			<br />
+			<br />
+
+			<input type="name" id="nombrenave">Nombre Aeronave </code>
+			<br />
+			<input type="number" id="idaeronave">Identificador Aeronave</code>
+			<br/>
+			<input type="number" id="capacidad">Capacidad Aeronave</code>
+			<br />
+			<input type="name" id="idnodrizaorigen">Identificador Nodriza Origen</code>
+			<br/>
+			<input type="name" id="idnodrizadestino">Identificador Nodriza Destino</code>
+
+			<button type="submit" id="botoncrearaeronave">Crear Aeronave (version espacial)</button>
+
 			<div class="divaero">
-				<button type="submit" id="listaraeronaves" >
+				<button type="submit" id="listaraeronaves" onclick="listaraeronaves" >
 					Listar Aeronaves Existentes
 				</button>
 			</div>
-			
+		</div>
 
 		<div><h1>Regresar a <a href="index.html">Principal</a></h1></div>
-			
+
 	</div>
 	</body>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
