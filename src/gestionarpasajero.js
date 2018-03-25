@@ -3,14 +3,10 @@ $("#botoncrearpasajero")
 {
 	var nombre=document.getElementById('nombrepasajero').value;
 	var id=document.getElementById('idpasajero').value;
-	var Json = {"NombrePasajero":nombre, "IdPasajero":id};
-	console.log("Prueba de recoleccion datos",nombre, id);
-				//"Parametro en Api":var, "Parametro en Api":var, etc...
 
 	$.ajax({
-		data:Json,
 		url:"http://localhost:4242/newpassenger/?name="+nombre+"&&id="+id,
-		type:'get',
+		type:'GET',
 		beforeSend:function(){
 			window.alert("Se gestiona el Envio, momento");
 		},
@@ -25,18 +21,14 @@ $("#botoncrearpasajero")
 
 
 $("#botonasignarpasajero")
-.click(function()
+.click(function(e)
 {
 	var idpasajero=document.getElementById('idpasajeroasignar').value;
 	var idaeronave=document.getElementById('idaeronaveasignar').value;
-	//var Json = {"IdPasajero":idpasajero, "IdAeronave":idaeronave};
-	//console.log("definicion de elementos",idpasajero, idaeronave);
-				//"Parametro en Api":var, "Parametro en Api":var, etc...
 
 	$.ajax({
-		//data:Json,
 		url:"http://localhost:4242/addpassenger/?passenger_id="+idpasajero+"&&aircraft_id="+idaeronave,
-		type:'get',
+		type:'GET',
 		beforeSend:function(){
 			window.alert("Se gestiona la asignación, momento");
 		},
@@ -56,14 +48,10 @@ $("#botonbajarpasajero")
 {
 	var idpasajero=document.getElementById('idpasajerobajar').value;
 	var idaeronave=document.getElementById('idaeronavebajar').value;
-	//var Json = {"IdPasajero":idpasajero, "IdAeronave":idaeronave};
-	//console.log("Identificación de sujetos bajados",idpasajero, idaeronave);
-				//"Parametro en Api":var, "Parametro en Api":var, etc...
 
 	$.ajax({
-		//data:Json,
 		url:"http://localhost:4242/removepassenger/?passenger_id="+idpasajero+"&&aircraft_id="+idaeronave,
-		type:'get',
+		type:'GET',
 		beforeSend:function(){
 			window.alert("Se gestiona el bajar al pasajero, momento");
 		},
@@ -83,7 +71,7 @@ $("#bottonlistarpasajerosaeronave")
 	var idaeronave=document.getElementById('idaeronavelistarpasajero').value;
 	$.ajax({
 		url:"http://localhost:4242/showpassengers/",
-		type:'get',
+		type:'GET',
 		beforeSend:function(){
 			window.alert("Se gestiona el listado, momento");
 		},

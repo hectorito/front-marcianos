@@ -6,22 +6,19 @@
 		<link rel="stylesheet" href="nodriza.css">
 		<link rel="stylesheet" href="gestionarpasajero.css">
 		<title>Gestionar Pasajero</title>
-		
-		
+
+
 	</head>
 	<body>
 		<div class="divextragrande">
-
 			<div class="divcrear">
-				<p class="crear">Crear Pasajero
-				</p>
+				<p class="crear">Crear Pasajero</p>
 				<br />
-				
-					<input type="text" id="nombrepasajero">Nombre Pasajero </code>
-					<br />
-					<br />
-					<input type="number" id="idpasajero">Identificador Pasajero</code>
-					<br />
+				<input type="text" id="nombrepasajero">Nombre Pasajero </code>
+				<br />
+				<br />
+				<input type="number" id="idpasajero">Identificador Pasajero</code>
+				<br />
 				<button id="botoncrearpasajero" type="submit">
 					Submit o enviar
 				</button>
@@ -31,54 +28,64 @@
 						<a href="index.html">Cancelar</a>
 					</h1>
 				</div>
-		</div>
+			</div>
+
 		<br/>
 
-		<div class="asignarpasajero">
-			<p class="crear">Asignación de Pasajeros</p>
-			
-				<input type="number" id="idpasajeroasignar">Identificador de Pasajero </code>
-				<br />			
+			<div class="asignarpasajero">
+				<p class="crear">Asignación de Pasajeros</p>
+					<input type="number" id="idpasajeroasignar">Identificador de Pasajero </code>
+					<br />
+					<br />
+					<input type="number" id="idaeronaveasignar">Identificador Aeronave</code>
+				<br/>
+				<button id="botonasignarpasajero" type="submit">
+						Submit o enviar
+					</button>
 				<br />
-				<input type="number" id="idaeronaveasignar">Identificador Aeronave</code>
-		
-			<br/>
-			<button id="botonasignarpasajero" type="submit">
-					Submit o enviar
-				</button>
-			<br />
-			<div>
-				<h1>Regresar a inicio sin asignar <a href="index.html">Cancelar</a>
-				</h1>
+				<div>
+					<h1>Regresar a inicio sin asignar <a href="index.html">Cancelar</a>
+					</h1>
+				</div>
 			</div>
-		</div>
-			
+
 		<br />
 
-		<div class="bajarpasajero">
-			<p class="crear">Bajar Pasajero</p>
-			<input type="number" id="idpasajerobajar"> Identificador Pasajero </code>
+			<div class="bajarpasajero">
+				<p class="bajar">Bajar Pasajero</p>
+				<br />
+				<input type="number" id="idpasajerobajar">Identificador Pasajero</code>
+				<br />
 				<br />
 				<input type="number" id="idaeronavebajar">Identificador Aeronave</code>
-				<br/><br/>
-			<button type="submit" id="botonbajarpasajero">Bajar Pasajero Aeronave</button>
+				<br />
+				<button id="botonbajarpasajero" type="submit">
+					Submit o enviar
+				</button>
+				<br />
+				<div>
+					<h1>Salir Sin Crear
+						<a href="index.html">Cancelar</a>
+					</h1>
+				</div>
+			</div>
 
-		</div>
 		<br/>
-		<div class="listarpasajerosaeronave1">
-			<h2>Listar Pasajeros de Aeronave</h2>
-			<input type="number" id="idaeronavelistarpasajero">
-			Identificador de aeronave 
-			<code/>
-			<button type="submit" id="bottonlistarpasajerosaeronave">
-				Listar Asignados
-			</button>
-		</div>
-		<div>
-			<h1>Regresar a inicio sin bajar<a href="index.html">Cancelar</a></h1>
-		</div>	
+
+			<div class="listarpasajerosaeronave1">
+				<h2>Listar Pasajeros de Aeronave</h2>
+				<input type="number" id="idaeronavelistarpasajero">
+				Identificador de aeronave
+				<code/>
+				<button type="submit" id="bottonlistarpasajerosaeronave">
+					Listar Asignados
+				</button>
+			</div>
+			<div>
+				<h1>Regresar a inicio sin bajar<a href="index.html">Cancelar</a></h1>
+			</div>
+	</div>
 	</body>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-		<script src="gestionarpasajero.js" type="text/javascript"></script>
-	
+	<script src="gestionarpasajero.js" type="text/javascript"></script>
 </html>

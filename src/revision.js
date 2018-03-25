@@ -8,7 +8,7 @@ $("#botoncrearrevision")
 	var fecha=document.getElementById('fecha').value;
 	$.ajax({
 		//data:Json,
-		url:'http://localhost:4242/generatereview/?id='+idrevision'&&name='+nombrerevisor+'&&aircraft_id='idaeronave+'created_at='fecha,
+		url:'http://localhost:4242/generatereview/?id='+idrevision+'&&name='+nombrerevisor+'&&aircraft_id='+idaeronave+'created_at='+fecha,
 		type:'get',
 		beforeSend:function(){
 			window.alert("Se gestiona el Envio, momento");
