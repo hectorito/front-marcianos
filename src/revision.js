@@ -1,3 +1,4 @@
+//TODO: no realiza llamada API (Tal vez boton no funciona)
 $("#botoncrearrevision")
 .click(function(e)
 {
@@ -5,10 +6,9 @@ $("#botoncrearrevision")
 	var nombrerevisor=document.getElementById('nombrerevisor').value;
 	var idaeronave=document.getElementById('idaeronave').value;
 	var fecha=document.getElementById('fecha').value;
-	var cantidadpasajeros=document.getElementById('cantidadpasajeros').value;
 	$.ajax({
 		//data:Json,
-		url:'http://localhost:4242/generatereview/?id=idrevision&&name=nombrerevisor&&aircraft_id=idaeronave',
+		url:'http://localhost:4242/generatereview/?id='+idrevision'&&name='+nombrerevisor+'&&aircraft_id='idaeronave+'created_at='fecha,
 		type:'get',
 		beforeSend:function(){
 			window.alert("Se gestiona el Envio, momento");
