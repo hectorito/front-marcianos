@@ -41,7 +41,7 @@ $("#listarpasajeros")
 			var Json = $.parseJSON(response);
 
 			for ( var i = 0; Json.length > i; i++){
-			$('#despliegelistapasajeros').append('<span> ID: ' +Json[i].id +'  Nombre:  ' + Json[i].name +' </success>')
+			$('#despliegelistapasajeros').append('<span> ID: ' +Json[i].id +'  Nombre:  ' + Json[i].name +' </span>')
 			}
 			// for (var i = 0; Json.length > i; ++i) {
 			// $('#despliegelistapasajeros').append('<div id="newdiv1">'+Json[i].id+' " " '+Json[i].name' +" " "</>')
@@ -68,7 +68,7 @@ $("#listarpasajeros")
 	});
 }
 
-	);}
+	);
 
 
 
