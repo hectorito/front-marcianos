@@ -31,30 +31,44 @@ $("#listarpasajeros")
 	// lista de pasajeros y nombre del revisor
 	$.ajax({
 		//data:Json,
-		url:'http://localhost:4242/generatereview/?id=idrevision&&name=nombrerevisor&&aircraft_id=idaeronave',
-		type:'get',
+		//url:'http://localhost:4242/generatereview/?id=idrevision&&name=nombrerevisor&&aircraft_id=idaeronave',
+		//type:'get',
 		beforeSend:function(){
-			window.alert("Se gestiona el Envio, momento");
+			window.alert("Se solicita lista, momento");
 		},
 		success:function(response){
 			dataType: 'json';
 			var Json = $.parseJSON(response);
 
-			for (var i = 0; Json.length > i; ++i) {
-				$('div#listarpasajeros').append('<div id="newdiv1">'+Json[i].id+' " " '+Json[i].name' +" " "</>');
-				
-				<br/>
+			for ( var i = 0; Json.length > i; i++){
+			$('#despliegelistapasajeros').append('<span> ID: ' +Json[i].id +'  Nombre:  ' + Json[i].name +' </success>')
 			}
-
-			//console.log(response);
+			// for (var i = 0; Json.length > i; ++i) {
+			// $('#despliegelistapasajeros').append('<div id="newdiv1">'+Json[i].id+' " " '+Json[i].name' +" " "</>')
+			// }
 		},
-		error:function(){alert("no sucedio... error");}
+		error:function(){
+			 Json = [
+			{
+				"id": 1,
+				"name": "Nicolas"
+			},
+			{
+				"id": 2,
+				"name": "Hector"
+			}
+			]
+			for ( var i = 0; Json.length > i; i++){
+			$('#despliegelistapasajeros').append('<span> ID: ' +Json[i].id +'  Nombre:  ' + Json[i].name +' </success>')
+			}
+			// for (var i = 0; Json.length > i; ++i) {
+			// $('#despliegelistapasajeros').append('<div id="newdiv1">'+Json[i].id+' " " '+Json[i].name' +" " "</>')
+			// }
+			alert("no sucedio... error");}
 	});
 }
 
-	);
-
-
+	);}
 
 
 
