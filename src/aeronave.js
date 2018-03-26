@@ -35,9 +35,29 @@ $("#listaraeronaves")
 			window.alert("Se gestiona el listado, momento");
 		},
 		success:function(response){
+			dataType: 'json';
+			var Json = jQuery.parsejson(response);
+
+			for ( var i = 0; Json.length > i; i++){
+			$('#listadoaeronaves').append('<span> ID: ' +Json[i].id +'  Nombre:  ' + Json[i].name +' </span>')
+			}
 			console.log(response);
 		},
-		error:function(){alert("no sucedio... o no hay Aeronaves");}
+		error:function(){
+			Json = [
+			{
+				"id": 1,
+				"name": "infinity"
+			},
+			{
+				"id": 2,
+				"name": "voyager"
+			}
+			]
+			for ( var i = 0; Json.length > i; i++){
+			$('#listadoaeronaves').append('<span> ID: ' +Json[i].id +'  Nombre:  ' + Json[i].name +' </span>')
+			}
+			alert("no sucedio... o no hay Aeronaves");}
 	});
 }
 
